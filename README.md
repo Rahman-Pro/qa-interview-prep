@@ -2,6 +2,10 @@
 
 Welcome to the ultimate **QA Automation & SDET Interview Preparation Platform**. This repository contains a standalone, serverless interactive console featuring **110+ hand-crafted Software Testing Interview Questions and Answers** designed to help QA engineers, manual testers, and SDETs land job offers at global tech companies.
 
+### 🚀 Live Interactive App: [https://rahman-pro.github.io/qa-interview-prep/](https://rahman-pro.github.io/qa-interview-prep/)
+
+*Click the link above to launch the secure practice console directly in your browser. Enter sandbox code **`1234`** to verify and start learning instantly!*
+
 This application is built as a single, zero-dependency static HTML file featuring a real-time keyword matching algorithm, voice dictation practicing, progress trackers, and performance maps.
 
 ---
