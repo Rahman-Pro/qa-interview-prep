@@ -1209,6 +1209,210 @@
             line-height: 1.5;
         }
 
+        /* 10-Question Audio Exam Styling */
+        .btn-exam {
+            padding: 8px 16px;
+            border: 1px solid var(--accent);
+            border-radius: 20px;
+            background: var(--accent-gradient);
+            color: #ffffff;
+            font-size: 0.82rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 0 4px 14px rgba(59, 130, 246, 0.35);
+            transition: all 0.2s;
+            font-family: var(--font-main);
+        }
+
+        .btn-exam:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
+        }
+
+        .exam-modal {
+            max-width: 750px !important;
+        }
+
+        .exam-setup-options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 20px 0;
+        }
+
+        .exam-option-card {
+            background: var(--card);
+            border: 2px solid var(--border);
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .exam-option-card:hover, .exam-option-card.selected {
+            border-color: var(--accent);
+            background: var(--accent-glow);
+            transform: translateY(-2px);
+        }
+
+        .exam-option-icon {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        .exam-option-title {
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 6px;
+            color: var(--text);
+        }
+
+        .exam-option-desc {
+            font-size: 0.78rem;
+            color: var(--text2);
+            line-height: 1.4;
+        }
+
+        .custom-q-box {
+            display: none;
+            margin-top: 16px;
+            text-align: left;
+        }
+
+        .custom-q-box label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--accent);
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .custom-q-ta {
+            width: 100%;
+            height: 140px;
+            padding: 12px;
+            background: rgba(0,0,0,0.3);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            color: var(--text);
+            font-family: var(--font-main);
+            font-size: 0.85rem;
+            resize: vertical;
+        }
+
+        .audio-speaker-box {
+            background: rgba(59, 130, 246, 0.08);
+            border: 1px solid rgba(59, 130, 246, 0.25);
+            border-radius: 14px;
+            padding: 16px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .audio-status {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            font-size: 0.88rem;
+            color: var(--accent);
+        }
+
+        .sound-wave {
+            display: flex;
+            align-items: flex-end;
+            gap: 3px;
+            height: 20px;
+        }
+
+        .wave-bar {
+            width: 4px;
+            height: 6px;
+            background: var(--accent);
+            border-radius: 2px;
+            animation: wave 1.2s ease-in-out infinite;
+        }
+
+        .wave-bar:nth-child(2) { animation-delay: 0.2s; }
+        .wave-bar:nth-child(3) { animation-delay: 0.4s; }
+        .wave-bar:nth-child(4) { animation-delay: 0.6s; }
+
+        @keyframes wave {
+            0%, 100% { height: 6px; }
+            50% { height: 18px; }
+        }
+
+        .btn-speak-again {
+            padding: 6px 14px;
+            border: 1px solid var(--accent);
+            border-radius: 8px;
+            background: transparent;
+            color: var(--accent);
+            font-size: 0.78rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-speak-again:hover {
+            background: var(--accent-glow);
+        }
+
+        .exam-progress-bar {
+            height: 6px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 3px;
+            margin-bottom: 16px;
+            overflow: hidden;
+        }
+
+        .exam-progress-fill {
+            height: 100%;
+            background: var(--accent-gradient);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .score-card-summary {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .exam-score-big {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--green);
+            text-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
+        }
+
+        .exam-q-report {
+            background: rgba(0,0,0,0.2);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 14px;
+            margin-bottom: 12px;
+            text-align: left;
+        }
+
+        .exam-q-report-head {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700;
+            font-size: 0.88rem;
+            margin-bottom: 6px;
+        }
+
         /* Responsive Layouts */
         @media(max-width:768px) {
             .header-content { flex-direction: column; text-align: center; }
@@ -1217,6 +1421,7 @@
             .stats { grid-template-columns: repeat(2, 1fr); }
             .modal { padding: 20px; }
             .modal-btns, .r-btns { flex-direction: column; }
+            .exam-setup-options { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -1252,6 +1457,7 @@
             <span class="badge" id="qaCountBadge">110 Q&A</span>
         </div>
         <div class="header-actions">
+            <button class="btn-exam" id="openExamBtn">🎧 10-Q Audio Exam</button>
             <input type="text" id="searchInput" placeholder="Search questions... (Ctrl+K)">
             <button class="btn-icon" id="themeToggle">🌙</button>
         </div>
@@ -1361,6 +1567,108 @@
             <div class="r-btns">
                 <button class="btn-retry" id="rRetry">🔄 Try Again</button>
                 <button class="btn-next" id="rNext">➡️ Next</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 10-Question Audio Interview Exam Modal -->
+<div class="modal-bg" id="examModalBg">
+    <div class="modal exam-modal">
+        <!-- Setup Step -->
+        <div id="stepExamSetup">
+            <div class="modal-head">
+                <span class="modal-badge">🎧 AUDIO INTERVIEW EXAM</span>
+                <button class="modal-x" id="examCloseBtn">&#x2715;</button>
+            </div>
+            <h2 style="font-size:1.3rem; font-weight:800; margin-bottom:8px;">10-Question Voice Interview</h2>
+            <p style="font-size:0.85rem; color:var(--text2); margin-bottom:20px;">
+                The AI interviewer will read 10 questions aloud to test your hearing & oral presentation. Speak your answers directly into your microphone, and get instant detailed marks!
+            </p>
+
+            <div class="exam-setup-options">
+                <div class="exam-option-card selected" id="optRandom10">
+                    <div class="exam-option-icon">🎲</div>
+                    <div class="exam-option-title">10 Random Questions</div>
+                    <div class="exam-option-desc">Auto-selects 10 random questions across all QA & SDET categories.</div>
+                </div>
+                <div class="exam-option-card" id="optCustom10">
+                    <div class="exam-option-icon">📝</div>
+                    <div class="exam-option-title">Custom 10 Questions</div>
+                    <div class="exam-option-desc">Provide your own 10 questions (existing or brand new custom list).</div>
+                </div>
+            </div>
+
+            <div class="custom-q-box" id="customQBox">
+                <label>Enter 10 Questions (1 per line or formatted as Q: Question text):</label>
+                <textarea class="custom-q-ta" id="customQInput" placeholder="1. What is Page Object Model in Selenium?&#10;2. How do you handle dynamic wait in Pytest?&#10;3. Explain continuous integration pipeline stages..."></textarea>
+            </div>
+
+            <div style="margin-top:24px; text-align:right;">
+                <button class="auth-btn" id="startExamBtn" style="padding:14px 28px; width:auto;">🚀 Start Audio Interview</button>
+            </div>
+        </div>
+
+        <!-- Active Interview Step -->
+        <div id="stepExamQuestion" style="display:none;">
+            <div class="modal-head">
+                <span class="modal-badge" id="examQBadge">Q1 of 10</span>
+                <button class="modal-x" id="examQuitBtn">&#x2715;</button>
+            </div>
+
+            <div class="exam-progress-bar">
+                <div class="exam-progress-fill" id="examProgressFill"></div>
+            </div>
+
+            <div class="audio-speaker-box">
+                <div class="audio-status">
+                    <span id="speakerIcon">🗣️</span>
+                    <span id="speakerStatusText">AI Interviewer Speaking...</span>
+                    <div class="sound-wave" id="soundWave">
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                    </div>
+                </div>
+                <button class="btn-speak-again" id="btnRepeatQ">🔊 Repeat Q</button>
+            </div>
+
+            <div class="modal-q" id="examQuestionText" style="font-size:1.15rem; min-height:60px;"></div>
+
+            <div style="margin-bottom:12px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.8rem; font-weight:700; color:var(--text2);">🎙️ YOUR SPOKEN RESPONSE:</span>
+                <span id="examMicBadge" style="font-size:0.75rem; color:var(--green); font-weight:600;">● Listening...</span>
+            </div>
+
+            <textarea class="modal-ta" id="examSpokenText" placeholder="Listening to your microphone... (or type if mic is disabled)" style="min-height:130px;"></textarea>
+
+            <div class="modal-btns">
+                <button class="btn-voice" id="examVoiceToggle"><span id="examVIcon">🎙️</span> <span id="examVText">Mic Active</span></button>
+                <button class="btn-go" id="examSubmitAns">✅ Submit & Next Question ➡️</button>
+            </div>
+            <div class="v-status" id="examVStatus"></div>
+        </div>
+
+        <!-- Exam Report Card Step -->
+        <div id="stepExamResult" style="display:none;">
+            <div class="modal-head">
+                <span class="modal-badge" style="background:var(--green-bg); color:var(--green);">🏆 EXAMINATION REPORT</span>
+                <button class="modal-x" id="examResultCloseBtn">&#x2715;</button>
+            </div>
+
+            <div class="score-card-summary">
+                <div style="font-size:0.85rem; font-weight:700; color:var(--text2); text-transform:uppercase;">Overall Interview Score</div>
+                <div class="exam-score-big" id="examFinalScore">0 / 100</div>
+                <div style="font-size:1.1rem; font-weight:700; margin-top:6px;" id="examFinalVerdict">Passed with Distinction!</div>
+            </div>
+
+            <h3 style="font-size:1rem; font-weight:700; margin-bottom:12px;">Detailed Question-by-Question Marking:</h3>
+            <div id="examReportList" style="max-height:300px; overflow-y:auto; padding-right:6px;"></div>
+
+            <div class="r-btns" style="margin-top:20px;">
+                <button class="btn-retry" id="examRestartBtn">🔄 Take Another Exam</button>
+                <button class="btn-next" id="examFinishBtn">Done 👍</button>
             </div>
         </div>
     </div>
@@ -1963,6 +2271,398 @@ var DATA = {
         var closeBtn = document.getElementById('popupClose');
         if (closeBtn) closeBtn.onclick = function() { popup.className = 'badge-popup'; };
         setTimeout(function() { popup.className = 'badge-popup'; }, 5000);
+    }
+
+    // =========================================================
+    // 10-QUESTION AUDIO INTERVIEW EXAM CONTROLLER
+    // =========================================================
+    var examState = {
+        active: false,
+        mode: 'random', // 'random' or 'custom'
+        questions: [],
+        currentIndex: 0,
+        results: [],
+        recognition: null,
+        isListening: false
+    };
+
+    var openExamBtn = document.getElementById('openExamBtn');
+    var examModalBg = document.getElementById('examModalBg');
+    var examCloseBtn = document.getElementById('examCloseBtn');
+    var examQuitBtn = document.getElementById('examQuitBtn');
+    var examResultCloseBtn = document.getElementById('examResultCloseBtn');
+    var optRandom10 = document.getElementById('optRandom10');
+    var optCustom10 = document.getElementById('optCustom10');
+    var customQBox = document.getElementById('customQBox');
+    var customQInput = document.getElementById('customQInput');
+    var startExamBtn = document.getElementById('startExamBtn');
+    var btnRepeatQ = document.getElementById('btnRepeatQ');
+    var examSubmitAns = document.getElementById('examSubmitAns');
+    var examVoiceToggle = document.getElementById('examVoiceToggle');
+    var examRestartBtn = document.getElementById('examRestartBtn');
+    var examFinishBtn = document.getElementById('examFinishBtn');
+
+    if (openExamBtn) {
+        openExamBtn.onclick = function() {
+            showExamSetup();
+            if (examModalBg) examModalBg.className = 'modal-bg show';
+        };
+    }
+
+    if (examCloseBtn) examCloseBtn.onclick = closeExamModal;
+    if (examQuitBtn) examQuitBtn.onclick = closeExamModal;
+    if (examResultCloseBtn) examResultCloseBtn.onclick = closeExamModal;
+    if (examFinishBtn) examFinishBtn.onclick = closeExamModal;
+
+    if (optRandom10) {
+        optRandom10.onclick = function() {
+            optRandom10.className = 'exam-option-card selected';
+            optCustom10.className = 'exam-option-card';
+            customQBox.style.display = 'none';
+            examState.mode = 'random';
+        };
+    }
+
+    if (optCustom10) {
+        optCustom10.onclick = function() {
+            optCustom10.className = 'exam-option-card selected';
+            optRandom10.className = 'exam-option-card';
+            customQBox.style.display = 'block';
+            examState.mode = 'custom';
+        };
+    }
+
+    if (startExamBtn) {
+        startExamBtn.onclick = function() {
+            initExamSession();
+        };
+    }
+
+    if (btnRepeatQ) {
+        btnRepeatQ.onclick = function() {
+            if (examState.questions[examState.currentIndex]) {
+                speakExamQuestion(examState.questions[examState.currentIndex].q);
+            }
+        };
+    }
+
+    if (examVoiceToggle) {
+        examVoiceToggle.onclick = function() {
+            if (examState.isListening) {
+                stopExamMic();
+            } else {
+                startExamMic();
+            }
+        };
+    }
+
+    if (examSubmitAns) {
+        examSubmitAns.onclick = function() {
+            submitExamAnswer();
+        };
+    }
+
+    if (examRestartBtn) {
+        examRestartBtn.onclick = function() {
+            showExamSetup();
+        };
+    }
+
+    function showExamSetup() {
+        stopExamTTS();
+        stopExamMic();
+        document.getElementById('stepExamSetup').style.display = 'block';
+        document.getElementById('stepExamQuestion').style.display = 'none';
+        document.getElementById('stepExamResult').style.display = 'none';
+    }
+
+    function closeExamModal() {
+        stopExamTTS();
+        stopExamMic();
+        if (examModalBg) examModalBg.className = 'modal-bg';
+    }
+
+    function initExamSession() {
+        examState.questions = [];
+        examState.results = [];
+        examState.currentIndex = 0;
+
+        if (examState.mode === 'random') {
+            var pool = allQ.slice();
+            // Shuffle
+            pool.sort(function() { return 0.5 - Math.random(); });
+            examState.questions = pool.slice(0, 10);
+        } else {
+            var txt = customQInput.value.replace(/^\s+|\s+$/g, '');
+            if (!txt) {
+                alert('Please enter at least 1 custom question or switch to Random mode.');
+                return;
+            }
+            var lines = txt.split('\n');
+            var parsed = [];
+            for (var l = 0; l < lines.length; l++) {
+                var line = lines[l].replace(/^\s+|\s+$/g, '');
+                if (line) {
+                    // strip leading digits like "1. " or "Q1: "
+                    line = line.replace(/^(\d+[\.\)]|Q\d+:?)\s*/i, '');
+                    // try matching existing question bank for keywords
+                    var matchedObj = findMatchingQuestion(line);
+                    if (matchedObj) {
+                        parsed.push(matchedObj);
+                    } else {
+                        // generate dynamic keywords from prompt words
+                        var kw = extractKeywordsFromQuestion(line);
+                        parsed.push({
+                            id: 'C' + (l + 1),
+                            q: line,
+                            a: 'General QA best practice expected.',
+                            keywords: kw,
+                            diff: 'medium'
+                        });
+                    }
+                }
+            }
+            if (parsed.length === 0) {
+                alert('Could not parse any questions. Please enter text.');
+                return;
+            }
+            examState.questions = parsed.slice(0, 10);
+        }
+
+        document.getElementById('stepExamSetup').style.display = 'none';
+        document.getElementById('stepExamQuestion').style.display = 'block';
+        document.getElementById('stepExamResult').style.display = 'none';
+
+        renderExamQuestion();
+    }
+
+    function findMatchingQuestion(txt) {
+        var low = txt.toLowerCase();
+        for (var i = 0; i < allQ.length; i++) {
+            if (allQ[i].q.toLowerCase().indexOf(low) !== -1 || low.indexOf(allQ[i].q.toLowerCase()) !== -1) {
+                return allQ[i];
+            }
+        }
+        return null;
+    }
+
+    function extractKeywordsFromQuestion(txt) {
+        var words = txt.replace(/[^a-zA-Z0-9\s]/g, '').split(/\s+/);
+        var ignore = ['what','is','how','do','you','explain','the','and','to','in','for','a','an','of','with','on'];
+        var kw = [];
+        for (var w = 0; w < words.length; w++) {
+            var word = words[w].toLowerCase();
+            if (word.length > 3 && ignore.indexOf(word) === -1) {
+                if (kw.indexOf(word) === -1) kw.push(word);
+            }
+        }
+        return kw.length > 0 ? kw : ['qa', 'process', 'testing'];
+    }
+
+    function renderExamQuestion() {
+        var qObj = examState.questions[examState.currentIndex];
+        var total = examState.questions.length;
+
+        document.getElementById('examQBadge').textContent = 'Q' + (examState.currentIndex + 1) + ' of ' + total;
+        document.getElementById('examProgressFill').style.width = Math.round(((examState.currentIndex + 1) / total) * 100) + '%';
+        document.getElementById('examQuestionText').textContent = qObj.q;
+        document.getElementById('examSpokenText').value = '';
+        document.getElementById('examVStatus').textContent = '';
+
+        // Speak Question via TTS
+        speakExamQuestion(qObj.q, function() {
+            // Auto start microphone when speech finishes
+            startExamMic();
+        });
+    }
+
+    function speakExamQuestion(text, onEndCallback) {
+        stopExamTTS();
+        if ('speechSynthesis' in window) {
+            var wave = document.getElementById('soundWave');
+            var statusText = document.getElementById('speakerStatusText');
+            if (wave) wave.style.display = 'flex';
+            if (statusText) statusText.textContent = 'AI Interviewer Speaking...';
+
+            var utter = new SpeechSynthesisUtterance(text);
+            utter.lang = 'en-US';
+            utter.rate = 0.95;
+
+            utter.onend = function() {
+                if (wave) wave.style.display = 'none';
+                if (statusText) statusText.textContent = 'Listening to your answer...';
+                if (onEndCallback) onEndCallback();
+            };
+            utter.onerror = function() {
+                if (wave) wave.style.display = 'none';
+                if (statusText) statusText.textContent = 'Speech Error. Speak answer below:';
+                if (onEndCallback) onEndCallback();
+            };
+
+            window.speechSynthesis.speak(utter);
+        } else {
+            if (onEndCallback) onEndCallback();
+        }
+    }
+
+    function stopExamTTS() {
+        if ('speechSynthesis' in window) {
+            window.speechSynthesis.cancel();
+        }
+        var wave = document.getElementById('soundWave');
+        var statusText = document.getElementById('speakerStatusText');
+        if (wave) wave.style.display = 'none';
+        if (statusText) statusText.textContent = 'Ready';
+    }
+
+    function startExamMic() {
+        stopExamMic();
+        var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+        if (!SR) {
+            document.getElementById('examVStatus').textContent = '⚠️ Speech Recognition requires Chrome/Edge.';
+            return;
+        }
+
+        examState.recognition = new SR();
+        examState.recognition.lang = 'en-US';
+        examState.recognition.interimResults = true;
+        examState.recognition.continuous = true;
+
+        var ta = document.getElementById('examSpokenText');
+        var baseText = ta ? ta.value : '';
+
+        examState.recognition.onstart = function() {
+            examState.isListening = true;
+            document.getElementById('examMicBadge').textContent = '● Listening Live...';
+            document.getElementById('examMicBadge').style.color = 'var(--green)';
+            document.getElementById('examVText').textContent = 'Stop Mic';
+            document.getElementById('examVIcon').textContent = '🛑';
+        };
+
+        examState.recognition.onresult = function(e) {
+            var finalTxt = '', interimTxt = '';
+            for (var r = e.resultIndex; r < e.results.length; r++) {
+                if (e.results[r].isFinal) finalTxt += e.results[r][0].transcript + ' ';
+                else interimTxt += e.results[r][0].transcript;
+            }
+            if (finalTxt && ta) {
+                baseText += finalTxt;
+                ta.value = baseText;
+            }
+            document.getElementById('examVStatus').textContent = interimTxt ? '🎙️ "' + interimTxt + '"' : '🎙️ Recording spoken answer...';
+        };
+
+        examState.recognition.onerror = function(e) {
+            document.getElementById('examVStatus').textContent = '⚠️ Mic Error: ' + e.error;
+            stopExamMic();
+        };
+
+        examState.recognition.onend = function() {
+            if (examState.isListening) {
+                try { examState.recognition.start(); } catch(err) {}
+            }
+        };
+
+        try {
+            examState.recognition.start();
+        } catch(e) {
+            document.getElementById('examVStatus').textContent = '⚠️ Could not start microphone.';
+        }
+    }
+
+    function stopExamMic() {
+        examState.isListening = false;
+        if (examState.recognition) {
+            try { examState.recognition.stop(); } catch(e) {}
+            examState.recognition = null;
+        }
+        var badge = document.getElementById('examMicBadge');
+        if (badge) { badge.textContent = '○ Mic Paused'; badge.style.color = 'var(--text2)'; }
+        var vText = document.getElementById('examVText');
+        if (vText) vText.textContent = 'Start Mic';
+        var vIcon = document.getElementById('examVIcon');
+        if (vIcon) vIcon.textContent = '🎙️';
+    }
+
+    function submitExamAnswer() {
+        stopExamTTS();
+        stopExamMic();
+
+        var ta = document.getElementById('examSpokenText');
+        var userText = ta ? ta.value.replace(/^\s+|\s+$/g, '') : '';
+        var qObj = examState.questions[examState.currentIndex];
+
+        // Evaluate answer
+        var evalRes = calcScore(userText, qObj);
+        examState.results.push({
+            q: qObj.q,
+            ref: qObj.a,
+            user: userText || '(No spoken answer recorded)',
+            score: evalRes.s,
+            yes: evalRes.yes,
+            no: evalRes.no
+        });
+
+        examState.currentIndex++;
+
+        if (examState.currentIndex < examState.questions.length) {
+            renderExamQuestion();
+        } else {
+            showExamReportCard();
+        }
+    }
+
+    function showExamReportCard() {
+        document.getElementById('stepExamSetup').style.display = 'none';
+        document.getElementById('stepExamQuestion').style.display = 'none';
+        document.getElementById('stepExamResult').style.display = 'block';
+
+        var totalScore = 0;
+        var listContainer = document.getElementById('examReportList');
+        listContainer.innerHTML = '';
+
+        for (var i = 0; i < examState.results.length; i++) {
+            var r = examState.results[i];
+            totalScore += r.score;
+
+            var card = document.createElement('div');
+            card.className = 'exam-q-report';
+            var scoreColor = r.score >= 8 ? 'var(--green)' : r.score >= 5 ? 'var(--yellow)' : 'var(--red)';
+            
+            card.innerHTML = 
+                '<div class="exam-q-report-head">' +
+                    '<span>Q' + (i + 1) + '. ' + r.q + '</span>' +
+                    '<span style="color:' + scoreColor + '; font-weight:800;">' + r.score + ' / 10 pts</span>' +
+                '</div>' +
+                '<div style="font-size:0.8rem; color:var(--text); margin-bottom:4px;"><b>🗣️ Spoken:</b> ' + (r.user || 'None') + '</div>' +
+                '<div style="font-size:0.75rem; color:var(--green);"><b>✓ Covered:</b> ' + (r.yes.join(', ') || 'None') + '</div>';
+
+            listContainer.appendChild(card);
+        }
+
+        var grandTotal = Math.round((totalScore / (examState.results.length * 10)) * 100);
+        var scoreEl = document.getElementById('examFinalScore');
+        var verdictEl = document.getElementById('examFinalVerdict');
+
+        scoreEl.textContent = grandTotal + ' / 100';
+
+        if (grandTotal >= 85) {
+            scoreEl.style.color = 'var(--green)';
+            verdictEl.textContent = '🌟 Excellent! Outstanding Audio Interview Performance!';
+            verdictEl.style.color = 'var(--green)';
+        } else if (grandTotal >= 70) {
+            scoreEl.style.color = 'var(--accent)';
+            verdictEl.textContent = '👍 Good Job! Solid QA technical hearing answer!';
+            verdictEl.style.color = 'var(--accent)';
+        } else if (grandTotal >= 50) {
+            scoreEl.style.color = 'var(--yellow)';
+            verdictEl.textContent = '⚠️ Moderate. Practice speaking more technical keywords.';
+            verdictEl.style.color = 'var(--yellow)';
+        } else {
+            scoreEl.style.color = 'var(--red)';
+            verdictEl.textContent = '🎯 Needs Practice. Review the reference answers and speak clearly.';
+            verdictEl.style.color = 'var(--red)';
+        }
     }
 
 })();
