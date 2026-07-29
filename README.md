@@ -1,9 +1,9 @@
 # 🧪 QA Automation & SDET Interview Prep Console
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Web Speech API](https://img.shields.io/badge/Audio%20Exam-Voice%20Enabled-10b981.svg)](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)
-[![Questions](https://img.shields.io/badge/Question%20Bank-110%2B%20Q%26A-3b82f6.svg)](#-qa-interview-domains-covered)
-[![Zero Cost](https://img.shields.io/badge/Cost-100%25%20Free-green.svg)](#-zero-cost--zero-dependency-architecture)
+[![Play Live App](https://img.shields.io/badge/🚀_LIVE_DEMO_APP-Click_Here-success?style=for-the-badge&logo=googlechrome&logoColor=white)](https://atiqur-rahman-pro.github.io/qa-interview-prep/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Web Speech API](https://img.shields.io/badge/Audio%20Exam-Voice%20Enabled-10b981.svg?style=for-the-badge)](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)
+[![Questions](https://img.shields.io/badge/Question%20Bank-110%2B%20Q%26A-3b82f6.svg?style=for-the-badge)](#-qa-interview-domains-covered)
 
 Welcome to the **QA Automation & SDET Interview Preparation Platform**. This application is an interactive, serverless interview console and AI voice examiner featuring **110+ hand-crafted Software Testing & SDET Interview Questions and Answers**.
 
@@ -11,7 +11,7 @@ It is designed for **Self-Exam Candidates**, **Hiring Managers**, **Recruiters**
 
 ---
 
-### 🚀 Live Demo App: [https://rahman-pro.github.io/qa-interview-prep/](https://rahman-pro.github.io/qa-interview-prep/)
+### 🚀 Live Demo App: [https://atiqur-rahman-pro.github.io/qa-interview-prep/](https://atiqur-rahman-pro.github.io/qa-interview-prep/)
 
 *Click the link above to launch the application directly in your browser. Enter access code **`1234`** to verify and start practicing instantly!*
 
@@ -124,7 +124,7 @@ sequenceDiagram
 ### Option 1: Standalone Single File (Zero Setup)
 1. Download or clone this repository:
    ```bash
-   git clone https://github.com/Rahman-Pro/qa-interview-prep.git
+   git clone https://github.com/atiqur-rahman-pro/qa-interview-prep.git
    ```
 2. Double-click `index.html` to open it in Chrome or Edge.
 3. Enter sandbox access code **`1234`** and start practicing!
@@ -133,7 +133,7 @@ sequenceDiagram
 1. Push this repository to your GitHub account.
 2. Go to **Settings -> Pages**.
 3. Under **Branch**, select `main` and `/root`, then click **Save**.
-4. Your site will be live at `https://<your-username>.github.io/qa-interview-prep/`.
+4. Your site will be live at `https://atiqur-rahman-pro.github.io/qa-interview-prep/`.
 
 ---
 
@@ -150,13 +150,16 @@ This platform is intentionally engineered to run **100% free forever**:
 
 ---
 
-## 👨‍💻 Author & Connect
+## 👤 Author Identity & Connect
 
-- **Developer:** Atiqur Rahman (QA Automation & SDET Specialist)
-- **LinkedIn:** [Atiqur Rahman on LinkedIn](https://www.linkedin.com/in/atiqur-rahman-pro/)
-- **GitHub:** [Rahman-Pro Portfolio](https://github.com/Rahman-Pro)
-- **Projects:** [SleepApneaBD Healthcare Suite](https://sleepapneabd.com)
+<div align="center">
 
----
+### **Designed & Developed by Atiqur Rahman**
+*Senior Software QA & Test Automation Specialist*
 
-### 🌟 If you find this project helpful for your interview preparation, give it a Star on GitHub!
+[![Microsoft Playwright](https://img.shields.io/badge/MICROSOFT_PLAYWRIGHT-OPEN_SOURCE_CONTRIBUTOR-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)](https://github.com/microsoft/playwright-python/pull/3157)
+[![YouTube](https://img.shields.io/badge/YOUTUBE-SUBSCRIBE_NOW-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@Digital_Digest_Live)  
+[![GitHub](https://img.shields.io/badge/GITHUB-ATIQUR--RAHMAN--PRO-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/atiqur-rahman-pro)
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-CONNECT_ME-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/atiqur-rahman-pro)
+
+</div>
